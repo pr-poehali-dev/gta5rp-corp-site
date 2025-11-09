@@ -24,11 +24,13 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <Icon name="Building2" className="text-white" size={24} />
-              </div>
+              <img 
+                src="https://cdn.poehali.dev/files/577509af-bfcf-4216-994a-f0c69c6ee08a.png" 
+                alt="Kingsman Logo" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Elite Corp
+                Kingsman Corp
               </h1>
             </div>
             <div className="hidden md:flex gap-2">
@@ -85,12 +87,14 @@ const HomePage = ({ setActivePage }: { setActivePage: (page: PageType) => void }
     <div className="max-w-7xl mx-auto px-6">
       <div className="text-center mb-16 animate-fade-in">
         <div className="inline-block mb-6">
-          <div className="w-24 h-24 bg-gradient-to-br from-primary via-secondary to-accent rounded-2xl flex items-center justify-center shadow-2xl">
-            <Icon name="Building2" className="text-white" size={48} />
-          </div>
+          <img 
+            src="https://cdn.poehali.dev/files/577509af-bfcf-4216-994a-f0c69c6ee08a.png" 
+            alt="Kingsman Logo" 
+            className="w-32 h-32 rounded-full object-cover shadow-2xl"
+          />
         </div>
         <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-          Elite Corporation
+          Kingsman Corporation
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
           Ведущая корпорация в мире GTA 5 RP. Стремление к совершенству, честность в бизнесе, успех в каждом начинании.
@@ -176,7 +180,7 @@ const AboutPage = () => {
       <Card className="mb-8">
         <CardContent className="p-8">
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Elite Corporation — это ведущая организация в мире GTA 5 RP, которая специализируется на создании и развитии успешного бизнеса. 
+            Kingsman Corporation — это ведущая организация в мире GTA 5 RP, которая специализируется на создании и развитии успешного бизнеса. 
             Мы объединяем талантливых и амбициозных людей, готовых работать на результат и достигать поставленных целей.
           </p>
           <Separator className="my-6" />
@@ -265,7 +269,7 @@ const ManagementPage = () => {
         Руководство корпорации
       </h1>
       <p className="text-lg text-gray-600 mb-10">
-        Команда опытных профессионалов, которая ведет Elite Corporation к успеху
+        Команда опытных профессионалов, которая ведет Kingsman Corporation к успеху
       </p>
       <div className="grid md:grid-cols-2 gap-6">
         {management.map((person, index) => (
@@ -294,7 +298,7 @@ const NewsPage = () => {
     {
       date: '15 марта 2024',
       title: 'Открытие нового офиса в центре города',
-      description: 'Elite Corporation расширяет свое присутствие, открывая представительство в деловом центре. Новый офис оборудован по последнему слову техники.',
+      description: 'Kingsman Corporation расширяет свое присутствие, открывая представительство в деловом центре. Новый офис оборудован по последнему слову техники.',
       icon: 'Building',
     },
     {
@@ -317,7 +321,7 @@ const NewsPage = () => {
         Новости корпорации
       </h1>
       <p className="text-lg text-gray-600 mb-10">
-        Последние события и достижения Elite Corporation
+        Последние события и достижения Kingsman Corporation
       </p>
       <div className="space-y-6">
         {news.map((item, index) => (
@@ -383,7 +387,7 @@ const RulesPage = () => {
         Внутренние правила
       </h1>
       <p className="text-lg text-gray-600 mb-10">
-        Обязательные требования для всех сотрудников Elite Corporation
+        Обязательные требования для всех сотрудников Kingsman Corporation
       </p>
       <div className="space-y-6">
         {rules.map((section, index) => (
@@ -453,7 +457,7 @@ const CodePage = () => {
         Кодекс корпорации
       </h1>
       <p className="text-lg text-gray-600 mb-10">
-        Основные ценности и принципы Elite Corporation
+        Основные ценности и принципы Kingsman Corporation
       </p>
       <div className="grid md:grid-cols-2 gap-6">
         {codeItems.map((item, index) => (
