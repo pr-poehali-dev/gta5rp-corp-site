@@ -30,7 +30,7 @@ const Index = () => {
                 className="w-12 h-12 rounded-full object-cover"
               />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Kingsman Corp
+                Kingsmans
               </h1>
             </div>
             <div className="hidden md:flex gap-2">
@@ -94,7 +94,7 @@ const HomePage = ({ setActivePage }: { setActivePage: (page: PageType) => void }
           />
         </div>
         <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-          Kingsman Corporation
+          Kingsmans
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
           Ведущая корпорация в мире GTA 5 RP. Стремление к совершенству, честность в бизнесе, успех в каждом начинании.
@@ -180,7 +180,7 @@ const AboutPage = () => {
       <Card className="mb-8">
         <CardContent className="p-8">
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Kingsman Corporation — это ведущая организация в мире GTA 5 RP, которая специализируется на создании и развитии успешного бизнеса. 
+            Kingsmans — это ведущая организация в мире GTA 5 RP, которая специализируется на создании и развитии успешного бизнеса. 
             Мы объединяем талантливых и амбициозных людей, готовых работать на результат и достигать поставленных целей.
           </p>
           <Separator className="my-6" />
@@ -269,7 +269,7 @@ const ManagementPage = () => {
         Руководство корпорации
       </h1>
       <p className="text-lg text-gray-600 mb-10">
-        Команда опытных профессионалов, которая ведет Kingsman Corporation к успеху
+        Команда опытных профессионалов, которая ведет Kingsmans к успеху
       </p>
       <div className="grid md:grid-cols-2 gap-6">
         {management.map((person, index) => (
@@ -298,7 +298,7 @@ const NewsPage = () => {
     {
       date: '15 марта 2024',
       title: 'Открытие нового офиса в центре города',
-      description: 'Kingsman Corporation расширяет свое присутствие, открывая представительство в деловом центре. Новый офис оборудован по последнему слову техники.',
+      description: 'Kingsmans расширяет свое присутствие, открывая представительство в деловом центре. Новый офис оборудован по последнему слову техники.',
       icon: 'Building',
     },
     {
@@ -321,7 +321,7 @@ const NewsPage = () => {
         Новости корпорации
       </h1>
       <p className="text-lg text-gray-600 mb-10">
-        Последние события и достижения Kingsman Corporation
+        Последние события и достижения Kingsmans
       </p>
       <div className="space-y-6">
         {news.map((item, index) => (
@@ -387,7 +387,7 @@ const RulesPage = () => {
         Внутренние правила
       </h1>
       <p className="text-lg text-gray-600 mb-10">
-        Обязательные требования для всех сотрудников Kingsman Corporation
+        Обязательные требования для всех сотрудников Kingsmans
       </p>
       <div className="space-y-6">
         {rules.map((section, index) => (
@@ -457,7 +457,7 @@ const CodePage = () => {
         Кодекс корпорации
       </h1>
       <p className="text-lg text-gray-600 mb-10">
-        Основные ценности и принципы Kingsman Corporation
+        Основные ценности и принципы Kingsmans
       </p>
       <div className="grid md:grid-cols-2 gap-6">
         {codeItems.map((item, index) => (
