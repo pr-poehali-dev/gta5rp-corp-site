@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import { Separator } from '@/components/ui/separator';
 
-type PageType = 'home' | 'about' | 'management' | 'news' | 'rules' | 'code';
+type PageType = 'home' | 'about' | 'management' | 'news';
 
 const Index = () => {
   const [activePage, setActivePage] = useState<PageType>('home');
@@ -14,8 +14,6 @@ const Index = () => {
     { id: 'about' as PageType, label: 'О корпорации', icon: 'Building2' },
     { id: 'management' as PageType, label: 'Руководство', icon: 'Users' },
     { id: 'news' as PageType, label: 'Новости', icon: 'Newspaper' },
-    { id: 'rules' as PageType, label: 'Внутренние правила', icon: 'FileText' },
-    { id: 'code' as PageType, label: 'Кодекс корпорации', icon: 'Shield' },
   ];
 
   return (
@@ -58,12 +56,10 @@ const Index = () => {
         {activePage === 'about' && <AboutPage />}
         {activePage === 'management' && <ManagementPage />}
         {activePage === 'news' && <NewsPage />}
-        {activePage === 'rules' && <RulesPage />}
-        {activePage === 'code' && <CodePage />}
       </div>
 
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-2">
-        <div className="grid grid-cols-3 gap-1">
+        <div className="grid grid-cols-4 gap-1">
           {navigation.map((item) => (
             <Button
               key={item.id}
